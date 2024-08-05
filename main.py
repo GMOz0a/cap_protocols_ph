@@ -10,6 +10,6 @@ sections = {
     "GI": colon_rectum_resection,
 }
 
-pg = st.navigation ([breast_resection, colon_rectum_resection])
+pg = st.navigation (sections)
 st.set_page_config(page_title = "Cancer  Reporting Protocols", page_icon = ":clipboard:")
 pg.run()
