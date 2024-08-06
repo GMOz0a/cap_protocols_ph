@@ -15,7 +15,7 @@ st.markdown("""
 with open("data/breast_2024.pkl", 'rb') as fp:
     data = pickle.load(fp)
 
-if "protocol_content" not in st.session_state:
+if "protocol_content_breast_ca" not in st.session_state:
     st.session_state.protocol_content_breast_ca = {k:v for k, v in zip(data.keys(), [""] * len(data))}
     st.session_state.protocol_content_breast_ca["Additional Findings"] = "" 
 
