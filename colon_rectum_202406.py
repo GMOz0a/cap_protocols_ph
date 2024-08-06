@@ -15,7 +15,7 @@ st.markdown("""
 with open("data/colon_rectum_resection_062024.pkl", 'rb') as fp:
     data = pickle.load(fp)
 
-if "protocol_content" not in st.session_state:
+if "protocol_content_colonrectum_resection" not in st.session_state:
     st.session_state.protocol_content_colonrectum_resection = {k:v for k, v in zip(data.keys(), [""] * len(data))}
     st.session_state.protocol_content_colonrectum_resection["Additional Findings"] = "" 
 
