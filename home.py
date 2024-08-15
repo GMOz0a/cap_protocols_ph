@@ -18,7 +18,8 @@ st.info("Will try to include one protocol every 2 to 3 days or one entire sectio
 st.divider()
 st.markdown("### :black_nib: Versions")
 st.markdown("""
+    * **2024/08/15**: Added Esophagus, Stomach, HCC and Exocrine Pancreas Protocols; Revised Breast (Resection) protocol.
     * **2024/08/11**: Launched the 'Gynecologic' protocols.
-    * **2024/08/05**: Included thy thyroid protocol.
+    * **2024/08/05**: Included th Thyroid protocol.
     * **2024/08/04**: Launched the CAP synoptic protocols: Breast and Colon/Rectum.
 """)
