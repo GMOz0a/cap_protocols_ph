@@ -18,6 +18,7 @@ st.info("Will try to include one protocol every 2 to 3 days or one entire sectio
 st.divider()
 st.markdown("### :black_nib: Versions")
 st.markdown("""
+    * **2024/08/18**: Added Kidney, Phyllodes, and Extragonadal Germ Cell Tumor Protocols.
     * **2024/08/15**: Added Esophagus, Stomach, HCC and Exocrine Pancreas Protocols; Revised Breast (Resection) protocol.
     * **2024/08/11**: Launched the 'Gynecologic' protocols.
     * **2024/08/05**: Included th Thyroid protocol.
