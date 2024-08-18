@@ -1,44 +1,26 @@
 import streamlit as st
 
-#Home
-home_page = st.Page("home.py", title = "Home", icon="🏚️")
+st.header(":robot_face: Welcome to the CAP synoptic protocol app!")
+st.subheader(":teacher: General Instructions")
 
-#Breast 
-breast_resection = st.Page("breast_202406.py", title = "Breast (Carcinoma)")
-phyllodes = st.Page("phyllodes_sep2022.py", title = "Phyllodes Tumor")
+st.markdown("""
+            1. Choose a protocol from the sidebar.
+            2. Each section generates a single line in the report. Any section left blank will not be included in the report. 
+            3. For **"other tissue/organs"** and **"lymph nodes"** involved by tumor: if you choose to specify the status of each specimen with their corresponding labels, please choose the option which has the phrase **"Specify individually"**.
+            4. Do not forget to press "Enter" every time you type an entry into any text field, for it to be saved/cached. A preview will be shown at the bottom of each section which confirms that your input has been included into the final report. 
+            5. Press **"Add to Report"** to include the line into the final report.
+            6. Press **"Remove from Report"** to remove the line from the final report.
+            7. The final report can be found at the end of all of the sections. 
+            8. Do not forget to click **Copy to Clipboard** icon and paste your final report onto a different text file. 
+""")
+st.info("Will try to include one protocol every 2 to 3 days or one entire section each week so stay tuned :v:. For any feedback, or any bug you may encounter, please let me know! ")
 
-#Endocrine
-thyroid = st.Page("thyroid_202303.py", title = "Thyroid")
-
-#GI
-colon_rectum_resection = st.Page("colon_rectum_202406.py", title = "Colon and Rectum (Resection)")
-esophagus = st.Page("esophagus_jun2022.py", title = "Esophagus")
-hcc = st.Page("HCC_Jun2022.py", title = "Hepatocellular Carcinoma")
-ex_panc = st.Page("expan_nov2021.py", title = "Pancreas (Exocrine)")
-stomach = st.Page("stomach_mar2023.py", title = "Stomach")
-
-#Gynecologic
-cx_resection = st.Page("cx_april2023.py", title = "Cervix (Resection)")
-endom = st.Page("endom_2023.py", title = "Endometrium")
-ovary = st.Page("ovary_jun2024.py", title = "Ovary")
-uterus_sarc = st.Page("uterus_sarc_mar2022.py", title = "Uterine Sarcoma")
-gtn = st.Page("gtn_nov2021.py", title = "Trophoblastic Tumors")
-
-# GU
-kidney_res = st.Page("kidney_jun2024.py", title = "Kidney (Resection)")
-
-#Pediatric 
-exgct = st.Page("exgct_sep2023.py", title = "Extragonadal Germ Cell Tumor (Resection)")
-
-sections = {
-    "Home": [home_page],
-    "Breast": [breast_resection, phyllodes],
-    "Endocrine": [thyroid],
-    "GI": [colon_rectum_resection, esophagus, hcc, ex_panc, stomach],
-    "GU": [kidney_res],
-    "Gynecologic": [cx_resection, endom, ovary, uterus_sarc, gtn],
-    "Pediatric": [exgct]
-} 
-pg = st.navigation (sections)
-st.set_page_config(page_title = "The Gabberbot CAP Protocols app", page_icon = ":clipboard:")
-pg.run()
+st.divider()
+st.markdown("### :black_nib: Versions")
+st.markdown("""
+    * **2024/08/18**: Added Kidney, Phyllodes, and Extragonadal Germ Cell Tumor Protocols.
+    * **2024/08/15**: Added Esophagus, Stomach, HCC and Exocrine Pancreas Protocols; Revised Breast (Resection) protocol.
+    * **2024/08/11**: Launched the 'Gynecologic' protocols.
+    * **2024/08/05**: Included th Thyroid protocol.
+    * **2024/08/04**: Launched the CAP synoptic protocols: Breast and Colon/Rectum.
+""")
