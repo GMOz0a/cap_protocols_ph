@@ -11,8 +11,10 @@ phyllodes = st.Page("phyllodes_sep2022.py", title = "Phyllodes Tumor")
 thyroid = st.Page("thyroid_202303.py", title = "Thyroid")
 
 #GI
+ampulla = st.Page("ampulla_nov2021.py", title = "Ampulla of Vater")
 colon_rectum_resection = st.Page("colon_rectum_202406.py", title = "Colon and Rectum (Resection)")
 esophagus = st.Page("esophagus_jun2022.py", title = "Esophagus")
+gist = st.Page("gist_sep2023.py", title = "Gist (Resection)")
 hcc = st.Page("HCC_Jun2022.py", title = "Hepatocellular Carcinoma")
 ex_panc = st.Page("expan_nov2021.py", title = "Pancreas (Exocrine)")
 stomach = st.Page("stomach_mar2023.py", title = "Stomach")
@@ -26,6 +28,8 @@ gtn = st.Page("gtn_nov2021.py", title = "Trophoblastic Tumors")
 
 # GU
 kidney_res = st.Page("kidney_jun2024.py", title = "Kidney (Resection)")
+pros_core = st.Page("proscore_sep2023.py", title = "Prostate - Core Biopsy")
+pros_turp = st.Page("proturp_sep2023.py", title = "Prostate - Core Biopsy")
 
 #Pediatric 
 exgct = st.Page("exgct_sep2023.py", title = "Extragonadal Germ Cell Tumor (Resection)")
@@ -34,8 +38,8 @@ sections = {
     "Home": [home_page],
     "Breast": [breast_resection, phyllodes],
     "Endocrine": [thyroid],
-    "GI": [colon_rectum_resection, esophagus, hcc, ex_panc, stomach],
-    "GU": [kidney_res],
+    "GI": [ampulla, colon_rectum_resection, esophagus, gist, hcc, ex_panc, stomach],
+    "GU": [kidney_res, pros_core, pros_turp],
     "Gynecologic": [cx_resection, endom, ovary, uterus_sarc, gtn],
     "Pediatric": [exgct]
 } 
