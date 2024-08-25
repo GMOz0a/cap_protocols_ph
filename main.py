@@ -4,7 +4,7 @@ import streamlit as st
 home_page = st.Page("home.py", title = "Home", icon="🏚️")
 
 #Breast 
-breast_resection = st.Page("breast_202406.py", title = "Breast (Carcinoma)")
+breast_resection = st.Page("breastca_jun2024.py", title = "Breast (Carcinoma)")
 phyllodes = st.Page("phyllodes_sep2022.py", title = "Phyllodes Tumor")
 
 #Endocrine
@@ -29,7 +29,7 @@ gtn = st.Page("gtn_nov2021.py", title = "Trophoblastic Tumors")
 # GU
 kidney_res = st.Page("kidney_jun2024.py", title = "Kidney (Resection)")
 pros_core = st.Page("proscore_sep2023.py", title = "Prostate - Core Biopsy")
-pros_turp = st.Page("proturp_sep2023.py", title = "Prostate - TURP")
+pros_turp = st.Page("proturp_sep2023.py", title = "Prostate - Core Biopsy")
 
 #Pediatric 
 exgct = st.Page("exgct_sep2023.py", title = "Extragonadal Germ Cell Tumor (Resection)")
