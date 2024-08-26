@@ -79,7 +79,7 @@ for i, section_title in enumerate(data.keys()):
             section_line = st.selectbox("", options = section["options"], key = f"{section_title}-{i}")
 
             if section_line == "Specify exact size": 
-                size_ln = st.text_input("Please specify exact number of lymph node(s)", key =  f"{section_title}-{i}-exact")
+                size_ln = st.text_input(f"{additional_caption}", key =  f"{section_title}-{i}-exact")
                 section_line = f"{size_ln} {suffix}" + "."
             elif section_line == "Less than":
                 size_ln = st.text_input("Please specify exact number of lymph node(s)", key =  f"{section_title}-{i}-at least")
