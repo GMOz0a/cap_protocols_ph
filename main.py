@@ -12,6 +12,8 @@ thyroid = st.Page("thyroid_202303.py", title = "Thyroid")
 
 #GI
 ampulla = st.Page("ampulla_nov2021.py", title = "Ampulla of Vater")
+anus = st.Page("anus_sep2023.py", title = "Anus")
+appendix =  st.Page("appendix_dec2022.py", title = "Appendix") 
 colon_rectum_resection = st.Page("colon_rectum_202406.py", title = "Colon and Rectum (Resection)")
 esophagus = st.Page("esophagus_jun2022.py", title = "Esophagus")
 gist = st.Page("gist_sep2023.py", title = "Gist (Resection)")
@@ -20,6 +22,7 @@ ex_panc = st.Page("expan_nov2021.py", title = "Pancreas (Exocrine)")
 stomach = st.Page("stomach_mar2023.py", title = "Stomach")
 
 #Gynecologic
+cx_bx = st.Page("cxbx_mar2023.py", title = "Cervix (Biopsy)")
 cx_resection = st.Page("cx_april2023.py", title = "Cervix (Resection)")
 endom = st.Page("endom_2023.py", title = "Endometrium")
 ovary = st.Page("ovary_jun2024.py", title = "Ovary")
@@ -27,9 +30,11 @@ uterus_sarc = st.Page("uterus_sarc_mar2022.py", title = "Uterine Sarcoma")
 gtn = st.Page("gtn_nov2021.py", title = "Trophoblastic Tumors")
 
 # GU
+bladder = st.Page("bladder_sep2023.py", title = "Kidney (Resection)")
 kidney_res = st.Page("kidney_jun2024.py", title = "Kidney (Resection)")
 pros_core = st.Page("proscore_sep2023.py", title = "Prostate - Core Biopsy")
 pros_turp = st.Page("proturp_sep2023.py", title = "Prostate - TURP")
+
 
 #Pediatric 
 exgct = st.Page("exgct_sep2023.py", title = "Extragonadal Germ Cell Tumor (Resection)")
@@ -38,9 +43,9 @@ sections = {
     "Home": [home_page],
     "Breast": [breast_resection, phyllodes],
     "Endocrine": [thyroid],
-    "GI": [ampulla, colon_rectum_resection, esophagus, gist, hcc, ex_panc, stomach],
-    "GU": [kidney_res, pros_core, pros_turp],
-    "Gynecologic": [cx_resection, endom, ovary, uterus_sarc, gtn],
+    "GI": [ampulla, anus, appendix, colon_rectum_resection, esophagus, gist, hcc, ex_panc, stomach],
+    "GU": [bladder, kidney_res, pros_core, pros_turp],
+    "Gynecologic": [cx_bx, cx_resection, endom, ovary, uterus_sarc, gtn],
     "Pediatric": [exgct]
 } 
 pg = st.navigation (sections)
