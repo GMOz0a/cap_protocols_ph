@@ -18,6 +18,7 @@ st.info("Will try to include one protocol every 2 to 3 days or one entire sectio
 st.divider()
 st.markdown("### :black_nib: Updates")
 st.markdown("""
+    * **2024/09/09**: Added Larynx, Salivary Gland, Oral Cavity, Vulva, Gallbladder, Adrenal Gland, Prostate (Resection), and Testis Protocols
     * **2024/09/03**: Added Bladder (Resection), Cervix (Biopsy), Anus, and Appendix Protocols.
     * **2024/08/25**: Revised Breast (Carcinoma) Protocol.
     * **2024/08/24**: Added GIST (Resection), Ampulla of Vater, Prostate (Core), and Prostate (TURP) Protocols.
