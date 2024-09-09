@@ -43,7 +43,7 @@ testis = st.Page("testis_sep2023.py", title = "Testis")
 # Head and Neck
 larynx = st.Page("larynx_jun2023.py", title = "Larynx")
 oral = st.Page("oral_jun2023.py", title = "Oral Cavity")
-salivary = st.Page("salivary_jun2023.py", title = "Oral Cavity")
+salivary = st.Page("salivary_jun2023.py", title = "Salivary Gland")
 
 #Pediatric 
 exgct = st.Page("exgct_sep2023.py", title = "Extragonadal Germ Cell Tumor (Resection)")
