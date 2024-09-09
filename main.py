@@ -9,6 +9,7 @@ phyllodes = st.Page("phyllodes_sep2022.py", title = "Phyllodes Tumor")
 
 #Endocrine
 thyroid = st.Page("thyroid_202303.py", title = "Thyroid")
+adrenal = st.Page("adrenal_mar2023.py", title = "Adrenal Gland")
 
 #GI
 ampulla = st.Page("ampulla_nov2021.py", title = "Ampulla of Vater")
@@ -16,6 +17,7 @@ anus = st.Page("anus_sep2023.py", title = "Anus")
 appendix =  st.Page("appendix_dec2022.py", title = "Appendix") 
 colon_rectum_resection = st.Page("colon_rectum_202406.py", title = "Colon and Rectum (Resection)")
 esophagus = st.Page("esophagus_jun2022.py", title = "Esophagus")
+gallbladder = st.Page("gb_jun2021.py", title = "Gallbladder")
 gist = st.Page("gist_sep2023.py", title = "Gist (Resection)")
 hcc = st.Page("HCC_Jun2022.py", title = "Hepatocellular Carcinoma")
 ex_panc = st.Page("expan_nov2021.py", title = "Pancreas (Exocrine)")
@@ -27,14 +29,21 @@ cx_resection = st.Page("cx_april2023.py", title = "Cervix (Resection)")
 endom = st.Page("endom_2023.py", title = "Endometrium")
 ovary = st.Page("ovary_jun2024.py", title = "Ovary")
 uterus_sarc = st.Page("uterus_sarc_mar2022.py", title = "Uterine Sarcoma")
+vulva = st.Page("vulva_jun2024.py", title = "Vulva")
 gtn = st.Page("gtn_nov2021.py", title = "Trophoblastic Tumors")
 
 # GU
-bladder = st.Page("bladder_sep2023.py", title = "Kidney (Resection)")
+bladder = st.Page("bladder_sep2023.py", title = "Bladder (Resection)")
 kidney_res = st.Page("kidney_jun2024.py", title = "Kidney (Resection)")
 pros_core = st.Page("proscore_sep2023.py", title = "Prostate - Core Biopsy")
+pros_resection = st.Page("prostateres_sep2023.py", title = "Prostate - Resection")
 pros_turp = st.Page("proturp_sep2023.py", title = "Prostate - TURP")
+testis = st.Page("testis_sep2023.py", title = "Testis")
 
+# Head and Neck
+larynx = st.Page("larynx_jun2023.py", title = "Larynx")
+oral = st.Page("oral_jun2023.py", title = "Oral Cavity")
+salivary = st.Page("salivary_jun2023.py", title = "Oral Cavity")
 
 #Pediatric 
 exgct = st.Page("exgct_sep2023.py", title = "Extragonadal Germ Cell Tumor (Resection)")
@@ -42,10 +51,12 @@ exgct = st.Page("exgct_sep2023.py", title = "Extragonadal Germ Cell Tumor (Resec
 sections = {
     "Home": [home_page],
     "Breast": [breast_resection, phyllodes],
-    "Endocrine": [thyroid],
-    "GI": [ampulla, anus, appendix, colon_rectum_resection, esophagus, gist, hcc, ex_panc, stomach],
-    "GU": [bladder, kidney_res, pros_core, pros_turp],
-    "Gynecologic": [cx_bx, cx_resection, endom, ovary, uterus_sarc, gtn],
+    "Endocrine": [thyroid, adrenal],
+    "GI": [ampulla, anus, appendix, colon_rectum_resection, 
+           esophagus, gallbladder, gist, hcc, ex_panc, stomach],
+    "GU": [bladder, kidney_res, pros_core, pros_resection, pros_turp],
+    "Gynecologic": [cx_bx, cx_resection, endom, ovary, uterus_sarc, vulva, gtn],
+    "Head and Neck": [larynx, oral, salivary],
     "Pediatric": [exgct]
 } 
 pg = st.navigation (sections)
