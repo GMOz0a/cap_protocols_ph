@@ -48,6 +48,11 @@ salivary = st.Page("salivary_jun2023.py", title = "Salivary Gland")
 #Pediatric 
 exgct = st.Page("exgct_sep2023.py", title = "Extragonadal Germ Cell Tumor (Resection)")
 
+#Thoracic
+lung = st.Page("lung_sep2022.py", title = "Lung (Resection)")
+thymus = st.Page("thymus_jun2021.py", title = "Thymus (June 2021)")
+meso = st.Page("meso_jun2021.py", title = "Pleural Mesothelioma (June 2021)")
+
 sections = {
     "Home": [home_page],
     "Breast": [breast_resection, phyllodes],
@@ -57,7 +62,8 @@ sections = {
     "GU": [bladder, kidney_res, pros_core, pros_resection, pros_turp],
     "Gynecologic": [cx_bx, cx_resection, endom, ovary, uterus_sarc, vulva, gtn],
     "Head and Neck": [larynx, oral, salivary],
-    "Pediatric": [exgct]
+    "Pediatric": [exgct],
+    "Thorax": [lung, thymus, meso]
 } 
 pg = st.navigation (sections)
 st.set_page_config(page_title = "The Gabberbot CAP Protocols app", page_icon = ":clipboard:")
